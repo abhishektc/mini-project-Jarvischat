@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PofileFragment"
+    android:background="#35A4AF"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="#B13E3E">
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="100dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/avatarIv"
+                android:background="@color/colorPrimaryDark"
+                android:src="@drawable/ic_add_image"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"/>
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_below="@id/l1">
+
+            <TextView
+                android:id="@+id/nameTv"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:textSize="30dp"
+                android:textAlignment="center"
+                android:text="Name"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_green_light"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/emailTv"
+                android:layout_marginTop="15dp"
+                android:textSize="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center"
+                android:text="Email"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_green_light"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/phoneTv"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:textSize="25dp"
+                android:textAlignment="center"
+                android:text="Contact"
+                android:textColor="@android:color/holo_green_light"
+                android:layout_marginLeft="5dp"/>
+
+            <Button
+                android:id="@+id/upload_btn"
+                android:layout_width="200dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:textColor="#35A4AF"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:background="#B13E3E"
+                android:text="Upload"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/l1"
+            android:layout_marginTop="200dp"
+            android:textAlignment="center"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Profile To Upload"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="#F56D49"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

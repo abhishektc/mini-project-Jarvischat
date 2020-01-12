@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#35A4AF"
+    tools:context=".HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/ic_chats"
+        android:layout_marginTop="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_chat"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:gravity="center"
+         />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/ic_chats"
+        android:textColor="@android:color/holo_green_light"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="60sp"
+        android:text="JarvisChat"
+        android:gravity="center"
+        />
+
+</RelativeLayout>
